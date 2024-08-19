@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DaukuzinUwU | bjs xoxo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <!--Header-->
+    <div class="drop-shadow-md bg-white px-8">
+      <!--Icon-->
+      <button
+        class="p-2 flex items-center space-x-1 hover:bg-gray-200 px-2 transition-all"
+        onclick="headerAudio()"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="size-10"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z"
+          />
+        </svg>
+        <h1 class="text-2xl semibold">DaokuzinUwU.cum</h1>
+      </button>
+    </div>
+    <!--Body-->
+    <div
+      class="space-x-2 px-12 pt-8 flex flex-col justify-center items-center min-w-full space-y-2"
+    >
+      <h1 class="text-2xl text-center">Libera o cuzinho? 🥺</h1>
+      <div class="flex justify-center space-x-4">
+        <button
+          id="yes"
+          onclick="playAudio()"
+          class="hover:bg-gray-200 transition-all p-1 px-2 rounded-lg focus:bg-black focus:text-white"
+        >
+          <p class="text-lg">Sim</p>
+        </button>
+        <button
+          id="no"
+          onclick="playAudioNo()"
+          class="hover:bg-gray-200 transition-all p-1 px-2 rounded-lg cursor-not-allowed"
+        >
+          <p class="text-lg">Não</p>
+        </button>
+      </div>
+      <img
+        id="sex"
+        class="h-0 w-96 transition-all"
+        src="https://i.pinimg.com/564x/73/c2/6a/73c26a5e23e7f6051d937f68a98e8863.jpg"
+        alt=""
+      />
+      <button
+        id="stopButton"
+        onclick="stopPlayingAudio()"
+        class="text-red-600 hover:text-red-400 h-0 transition-all"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="size-full"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+          />
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M9 9.563C9 9.252 9.252 9 9.563 9h4.874c.311 0 .563.252.563.563v4.874c0 .311-.252.563-.563.563H9.564A.562.562 0 0 1 9 14.437V9.564Z"
+          />
+        </svg>
+      </button>
+    </div>
+    <audio
+      controls
+      id="audio"
+      class="hidden"
+      src="http://codeskulptor-demos.commondatastorage.googleapis.com/pang/arrow.mp3"
+    ></audio>
+    <audio
+      controls
+      id="audioH"
+      class="hidden"
+      src="http://commondatastorage.googleapis.com/codeskulptor-assets/week7-brrring.m4a"
+    ></audio>
+    <audio
+      controls
+      id="audioSex"
+      class="hidden"
+      src="https://ia801509.us.archive.org/11/items/george-michael-careless-whisper-lyrics/George%20Michael%20-%20Careless%20Whisper%20%28Lyrics%29.mp3"
+    ></audio>
+    <audio
+      controls
+      id="negative"
+      class="hidden"
+      src="https://rpg.hamsterrepublic.com/wiki-images/d/d7/Oddbounce.ogg"
+    ></audio>
+  </body>
+  <script>
+    const audioPlayer = document.getElementById("audio");
+    const audioPlayerButCooler = document.getElementById("audioH");
+    const audioSEX = document.getElementById("audioSex");
+    const audioNo = document.getElementById("negative");
+    const stopAudioButton = document.getElementById("stopButton");
+    const sex = document.getElementById("sex");
+
+    function playAudio() {
+      audioSEX.volume = 0.2;
+
+      audioPlayer.play();
+      audioSEX.play();
+
+      sex.classList.remove("h-0");
+      sex.classList.add("h-96");
+      stopAudioButton.classList.remove("h-0");
+      stopAudioButton.classList.add("h-10");
+    }
+
+    function stopPlayingAudio() {
+      audioSEX.load();
+      audioPlayer.load();
+    }
+
+    function playAudioNo() {
+      audioNo.volume = 0.1;
+      audioNo.load();
+      audioNo.play();
+    }
+
+    function headerAudio() {
+      audioPlayerButCooler.volume = 0.5;
+      audioPlayerButCooler.load();
+      audioPlayerButCooler.play();
+      /* setTimeout(() => {
+        audioPlayerButCooler.play();
+      }, 1); */
+    }
+  </script>
+</html>
